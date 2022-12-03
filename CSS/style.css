@@ -1,0 +1,32 @@
+@import url('https://yarnpkg.com/en/package/normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Ropa+Sans&display=swap');
+
+
+:root{
+    
+    --white: #FFFFFF;
+    --second_white: #EEEEEE;
+    --gray: #888888;
+    --black: #333333;
+
+    --size_xg: 30px;
+    --size_lg: 25px;
+    --size_md: 20px;
+    --size_sm: 12px;
+    --size_xs: 10px;
+
+    --font_main:"Rapa Sans";
+    --font_regular: 400;
+}
+
+/* Cores */
+
+/* Tipografia */
+
+/* Estilo */
+
+/* layout - Espaçamentos */
+
+/* layout - Grade */
+
+/* Animações e atrnsições */
