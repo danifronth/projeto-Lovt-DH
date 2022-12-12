@@ -1,3 +1,4 @@
+@import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
 @import url('https://yarnpkg.com/en/package/normalize.css');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Ropa+Sans&display=swap');
 
@@ -8,6 +9,9 @@
     --second_white: #EEEEEE;
     --gray: #888888;
     --black: #333333;
+    --second_black: #000000;
+    --green: #51D275;
+    --orange: #DC9730;
 
     --size_xg: 30px;
     --size_lg: 25px;
@@ -15,18 +19,311 @@
     --size_sm: 12px;
     --size_xs: 10px;
 
-    --font_main:"Rapa Sans";
+    --font_main:"Ropa Sans";
     --font_regular: 400;
 }
 
+
+
 /* Cores */
+
+.logo_name {
+    color: var(--gray);
+}
+
+.logo_slogan {
+    color: var(--gray);
+    opacity: 0.6;
+}
+.price {
+    color: var(--gray);
+}
+
+.offers_card {
+    background-color: var(--second_white);
+}
+
+.description_text {
+    color: var(--gray);
+}
+
+.new {
+    background-color: var(--green);
+    color: var(--white);
+}
+.sale {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.categories_title {
+    color: var(--gray);
+}
+.categories_item {
+    color: var(--white);
+}
+
+
+.footer_wrap {
+    background-color: var(--black);
+}
+
+.footer_contacts address, .footer_title {
+    color: var(--white);
+}
+
+
+
 
 /* Tipografia */
 
+
+.logo_name {
+    font-family: var(--font_main);
+    font-weight: var(--font_regular);
+    font-size: var(--size_xg);
+
+}
+
+.logo_slogan {
+    font-family: var(--font_main);
+    font-weight: var(--font_regular) ;
+    font-size: var(--size_xs);
+}
+
+.price {
+    font-family: var(--font_main);
+    font-weight: var(--font_regular) ;
+    font-size: var(--size_lg);
+}
+
+
+
+.description_text {
+    font-family: var(--font_main);
+    font-weight: var(--font_regular) ;
+    font-size: var(--size_xs);
+}
+
+.new {
+    font-family: var(--font_main);
+    font-weight: var(--font_regular) ;
+    font-size: var(--size_md);
+}
+
+.sale{
+    font-family: var(--font_main);
+    font-weight: var(--font_regular) ;
+    font-size: var(--size_md);
+}
+
+.categories_title {
+    font-family: var(--font_main);
+    font-weight: var(--font_regular);
+    font-size: var(--size_lg);
+}
+
+.categories_item{
+    font-family: var(--font_main);
+    font-weight: var(--font_regular);
+    font-size: var(--size_lg);
+}
+
+.footer_contacts address, .footer_title {
+    font-family: var(--font_main);
+    font-weight: var(--font_regular);
+    font-size: var(--size_sm);
+    line-height: 12px;
+}
+
+
+
 /* Estilo */
+
+.logo_name {
+    text-decoration: none;
+    
+}
+
+.categories_item {
+    display: flex;
+    height: 80px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+    vertical-align: middle;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;   
+    
+}
+
+#industrial {
+    background-image: url(../img/Rectangle\ 11.png);
+}
+
+#modern {
+    background-image: url(../img/Rectangle\ 12.png);
+}
+
+#classic {
+    background-image: url(../img/Rectangle\ 13.png);
+}
+
+
+
+
 
 /* layout - Espaçamentos */
 
+.logo_name {
+    position: relative;
+    left: 35px;
+}
+
+.logo_slogan {
+    position: relative;
+    left: 35px;
+}
+
+.menu {
+    position: relative;
+    right: 25px;
+    
+}
+.main-header_wrap {
+    box-shadow: 0 0 0.75rem gray;
+}
+
+.description_text {
+    padding: 3%;
+}
+
+.principal-house {
+    padding: 2%;
+    padding-right: 0%;
+    padding-left: 0%;
+}
+
+.new {
+    padding: 2px;
+    position: relative;
+    left: 140px;
+    border-radius: 7.5px;
+}
+
+.sale {
+    padding: 2px;
+    position: relative;
+    left: 140px;
+    border-radius: 7.5px;
+}
+
+.price {
+    position: relative;
+    left: 10px;
+    top: 4px;
+    bottom: 2px;
+}
+.categories_title {
+    padding: 3%;
+    padding-bottom: 10px;
+}
+
+.footer_wrap {
+    margin-top: 406px;
+}
+
+.maps {
+    
+    height: 163px;
+    position: relative;
+    left: 55px;
+    bottom: 10px;
+}
+.footer_contacts {
+    position: relative;
+    left: 90px;
+    top: 10px;
+}
+
 /* layout - Grade */
 
-/* Animações e atrnsições */
+
+
+.logo * {
+    display: inline-block;
+    align-self: center;
+    
+}
+
+.menu {
+    
+    position: relative;
+    width: 18px;
+    height: 12px; 
+}
+
+
+.offers_wrap {
+    flex-wrap: wrap;
+}
+
+.offers_card {
+    width: 256px;
+    display: inline-block;
+}
+.offers_main-offer {
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+}
+
+
+.categories_title {
+    display: block;
+    text-align: center;
+}
+
+.social-mideas {
+    display: flex;
+    width: 95px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2px;    
+}
+
+.footer_contacts {
+    width: 40%;
+    align-items: flex-end;
+    position: relative;
+    top: 0px;
+}
+
+
+.main-header_wrap, .offers_wrap, .categoreis_wrap, .footer_wrap {
+    width: 697px;
+    margin: 0 auto;
+}
+
+
+.offers_wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer_wrap {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+.main-header_wrap {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
